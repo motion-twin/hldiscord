@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "discord", "hldiscord.vcxproj", "{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		ReleaseVS2013|x64 = ReleaseVS2013|x64
+		ReleaseVS2013|x86 = ReleaseVS2013|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Debug|x64.ActiveCfg = Debug|x64
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Debug|x64.Build.0 = Debug|x64
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Debug|x86.ActiveCfg = Debug|Win32
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Debug|x86.Build.0 = Debug|Win32
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Release|x64.ActiveCfg = Release|x64
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Release|x64.Build.0 = Release|x64
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Release|x86.ActiveCfg = Release|Win32
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.Release|x86.Build.0 = Release|Win32
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.ReleaseVS2013|x64.ActiveCfg = ReleaseVS2013|x64
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.ReleaseVS2013|x64.Build.0 = ReleaseVS2013|x64
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.ReleaseVS2013|x86.ActiveCfg = ReleaseVS2013|Win32
+		{790A6ECF-AEBA-48EB-BB22-6420079DFAFC}.ReleaseVS2013|x86.Build.0 = ReleaseVS2013|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+-lib hldiscord
+-lib heaps
+-lib hldx
+-hl test.hl
+-main test.Test
