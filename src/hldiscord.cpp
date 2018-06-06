@@ -5,7 +5,7 @@
 #include <time.h>
 
 
-void Ready() {
+void Ready(const DiscordUser* request) {
 }
 
 void Disconnected(int _errorCode, const char* _message) {

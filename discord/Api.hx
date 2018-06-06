@@ -3,7 +3,7 @@ package discord;
 @:hlNative("discord")
 class Api{
 
-    public static function updatePresence(state : String, details : String, autoUpdate : Bool) {
+    public inline static function updatePresence(state : String, details : String, autoUpdate : Bool) {
         update_state(@:privateAccess state.toUtf8(), false);
         update_details(@:privateAccess details.toUtf8(), autoUpdate);
     }
@@ -12,40 +12,56 @@ class Api{
         initApi(@:privateAccess discordAppID.toUtf8(), @:privateAccess steamAppID.toUtf8());
     }
 
-    public static function updateState(value : String, autoUpdate = true) {
+    public inline static function updateState(value : String, autoUpdate = true) {
         update_state(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateDetails(value : String, autoUpdate = true) {
+    public inline static function updateDetails(value : String, autoUpdate = true) {
         update_details(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateLargeImageKey(value : String, autoUpdate = true) {
+    public inline static function updateLargeImageKey(value : String, autoUpdate = true) {
         update_largeImageKey(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateLargeImageText(value : String, autoUpdate = true) {
+    public inline static function updateLargeImageText(value : String, autoUpdate = true) {
         update_largeImageText(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateSmallImageKey(value : String, autoUpdate = true) {
+    public inline static function updateSmallImageKey(value : String, autoUpdate = true) {
         update_smallImageKey(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateSmallImageText(value : String, autoUpdate = true) {
+    public inline static function updateSmallImageText(value : String, autoUpdate = true) {
         update_smallImageText(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateMatchSecret(value : String, autoUpdate = true) {
+    public inline static function updateMatchSecret(value : String, autoUpdate = true) {
         update_matchSecret(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateJoinSecret(value : String, autoUpdate = true) {
+    public inline static function updateJoinSecret(value : String, autoUpdate = true) {
         update_joinSecret(@:privateAccess value.toUtf8(), autoUpdate);
     }
 
-    public static function updateSpectateSecret(value : String, autoUpdate = true) {
+    public inline static function updateSpectateSecret(value : String, autoUpdate = true) {
         update_spectateSecret(@:privateAccess value.toUtf8(), autoUpdate);
+    }
+
+    public inline static function updatePartySize(value : Int, autoUpdate = true) {
+        update_partySize(value, autoUpdate);
+    }
+
+    public inline static function updatePartyMax(value : Int, autoUpdate = true) {
+        update_partyMax(value, autoUpdate);
+    }
+
+    public inline static function updateStartTimestamp(value : Int, autoUpdate = true) {
+        update_startTimestamp(value, autoUpdate);
+    }
+
+    public inline static function updateEndTimestamp(value : Int, autoUpdate = true) {
+        update_endTimestamp(value, autoUpdate);
     }
 
     @:hlNative("discord", "release")
@@ -53,16 +69,16 @@ class Api{
     }
                            
     @:hlNative("discord", "update_partySize")
-    public static function update_partySize(value : Int, autoUpdate = true) {}
+    static function update_partySize(value : Int, autoUpdate : Bool) {}
 
     @:hlNative("discord", "update_partyMax")
-    public static function update_partyMax(value : Int, autoUpdate = true) {}
+    static function update_partyMax(value : Int, autoUpdate : Bool) {}
 
     @:hlNative("discord", "update_startTimestamp")
-    public static function update_startTimestamp(value : Int, autoUpdate = true) {}
+    static function update_startTimestamp(value : Int, autoUpdate : Bool) {}
 
     @:hlNative("discord", "update_endTimestamp")
-    public static function update_endTimestamp(value : Int, autoUpdate = true) {}
+    static function update_endTimestamp(value : Int, autoUpdate : Bool) {}
 
     @:hlNative("discord", "update_state")
     static function update_state(value : hl.Bytes, autoUpdate : Bool) {}
@@ -92,6 +108,6 @@ class Api{
     static function update_spectateSecret(value : hl.Bytes, autoUpdate : Bool) {}
 
     @:hlNative("discord", "init")
-        static function initApi(discordAppID: hl.Bytes, steamAppID : hl.Bytes) {
+    static function initApi(discordAppID: hl.Bytes, steamAppID : hl.Bytes) {
     }
 }
